@@ -28,5 +28,4 @@ var getIntersectionNode = function(headA, headB) {
         }
         pb = pb.next;
     }
-    return null;
 };
