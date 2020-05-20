@@ -1,0 +1,13 @@
+var decompressRLElist = function(nums) {
+    let arr = [];
+    for (let i = 0; i < nums.length; i++) {
+      if (i % 2 === 0 || i === 0) {
+        let count = nums[i];
+        while (count > 0) {
+            arr.push(nums[i + 1]);
+            count--;
+        }
+      }
+    }
+    return arr;
+};
